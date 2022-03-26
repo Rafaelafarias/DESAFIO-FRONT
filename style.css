@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@400;700;900 & display=swap');
+@import url('https://fonts.google.com/share?selection.family=Kalam:wght@300%7CRoboto:wght@400;700;900');
+:root {
+    --cor-botao-foco: rgba(41, 32, 32, 0.19);
+}
+* { /*zerou tudo para estilizar*/
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color:white;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: #d1b5a9;
+    display: flex;
+    flex-direction:initial;
+    align-items: center;
+    /*justify-content:space-between;*/
+    padding-left: 60px;
+    padding-right: 30px;
+    gap: 30px
+}
+
+.logo{
+    height: 100px;
+}
+.barra_pesquisa{
+    background-color:white;
+    color:black;
+    width:600px;
+    height: 40px;
+    font-size: 20px;
+    text-decoration:solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+#menu ul{
+    margin: 0;
+    background-color: #d1b5a9;
+    list-style: none;
+}
+#menu ul li{
+    display: inline;
+}
+#menu ul li a{
+    padding: 5px 18px;
+    display: inline-block; /*deixa lado a lado a lista*/
+    color: white;
+}
+
+.box{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo_cadastro{
+    color: black;
+    font-size: 20px;
+    font-weight: 50px;
+    text-align: center;
+}
+
+.paragrafo{
+    text-align: center;
+}
+
+#form{
+    padding-top: 0px;
+    background-color: #d1b5a9;
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.botao{
+    background-color:black;
+    color:white;
+    width:300px;
+    height: 70px;
+    font-size: 20px;
+    text-decoration:double;
+    text-align: center;
+    border: 10px;
+    cursor:pointer; /*aparecer maozinha quando passar*/
+    transition: all 0.3s ease-in-out;  
+}
+
+.botao:hover{
+    /*pseudoclasse, toda vez que passar o mause por cima do elemento ele muda de estado*/
+    background-color: var(--cor-botao-foco);
+}
+
+.area-principal{
+    display: flex;
+  flex-direction:row; /*é o que faz ficar um a esquerda e outro a direita*/
+  justify-content:space-around;
+  align-items: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(to right, white, #d1b5a9(20, 47, 220));
+}
+
+.marca{
+    font-style: italic;
+    font-size: 55px;
+    color: #20110b;
+}
+
+.informacoes{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0px;
+    text-align: center;
+    color: #20110b;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.nome{
+    width:300px;
+    height: 40px;
+    font-size: 15px;
+    text-decoration:solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#input_email{
+    width:300px;
+    height: 40px;
+    font-size: 15px;
+    text-decoration:solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imagem{
+    orientation: center;
+    height: 400px;
+}
+
+.imagens_profissionais{
+    height: 400px;
+}
+.email{
+    background-color:white;
+    color:black;
+    width:250px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.rodape{
+    background-color: #d1b5a9;
+    text-align: center;
+    display:flow-root;
+}
+
