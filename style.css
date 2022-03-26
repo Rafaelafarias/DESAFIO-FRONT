@@ -10,27 +10,27 @@
     text-decoration: none;
 }
 
-body{
+body{ /*corpo*/
     background-color:white;
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
+.header{ /*cabeçalho*/
     background-color: #d1b5a9;
     display: flex;
     flex-direction:initial;
+    justify-content:space-around;
     align-items: center;
-    /*justify-content:space-between;*/
     padding-left: 60px;
     padding-right: 30px;
     gap: 30px
 }
 
-.logo{
+.logo{ /*logo da marca do site*/
     height: 100px;
 }
-.barra_pesquisa{
+.barra_pesquisa{ /*barra de pesquisa*/
     background-color:white;
     color:black;
     width:600px;
@@ -43,6 +43,7 @@ body{
     
 }
 
+/*para alterar links do menu*/
 #menu ul{
     margin: 0;
     background-color: #d1b5a9;
@@ -53,39 +54,27 @@ body{
 }
 #menu ul li a{
     padding: 5px 18px;
-    display: inline-block; /*deixa lado a lado a lista*/
+    display: inline-block; 
     color: white;
 }
 
-.box{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.titulo_cadastro{
+.titulo_cadastro{ /*Titulo do cadastro*/
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 50px;
     text-align: center;
 }
 
-.paragrafo{
-    text-align: center;
-}
 
-#form{
-    padding-top: 0px;
+#form{ /*Formulário do cadastro*/
     background-color: #d1b5a9;
-    border-radius: 10px;
-    padding: 60px;
+    padding: 90px 25%;
     width: min-content;
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.botao{
+.botao{ /*botao do formulário*/
     background-color:black;
     color:white;
     width:300px;
@@ -98,27 +87,46 @@ body{
     transition: all 0.3s ease-in-out;  
 }
 
-.botao:hover{
-    /*pseudoclasse, toda vez que passar o mause por cima do elemento ele muda de estado*/
+#input_nome{ /*nome do formulario*/
+    width:300px;
+    height: 40px;
+    font-size: 15px;
+    text-decoration:solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#input_email{ /*email do formulario*/
+    width:300px;
+    height: 40px;
+    font-size: 15px;
+    text-decoration:solid;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.botao:hover{/*Muda estado do botao do formulario*/
     background-color: var(--cor-botao-foco);
 }
 
-.area-principal{
+.area-principal{ /*área que fica no meio do site*/
     display: flex;
-  flex-direction:row; /*é o que faz ficar um a esquerda e outro a direita*/
-  justify-content:space-around;
-  align-items: center;
+    flex-direction:row; 
+    justify-content:space-around;
+    align-items: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: linear-gradient(to right, white, #d1b5a9(20, 47, 220));
 }
 
-.marca{
+.marca{ /*Alterar texto do titulo de informações*/
     font-style: italic;
     font-size: 55px;
     color: #20110b;
 }
 
-.informacoes{
+.informacoes{/*informações do site*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-top: 0px;
     text-align: center;
@@ -127,44 +135,12 @@ body{
     font-size: 15px;
 }
 
-.nome{
-    width:300px;
-    height: 40px;
-    font-size: 15px;
-    text-decoration:solid;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-#input_email{
-    width:300px;
-    height: 40px;
-    font-size: 15px;
-    text-decoration:solid;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.imagem{
+.imagem{ /*imagem do site*/
     orientation: center;
     height: 400px;
 }
 
-.imagens_profissionais{
-    height: 400px;
-}
-.email{
-    background-color:white;
-    color:black;
-    width:250px;
-    height: 30px;
-    font-size: 15px;
-    text-align: center;
-}
-
-.rodape{
+.rodape{ /*rodape do site*/
     background-color: #d1b5a9;
     text-align: center;
     display:flow-root;
