@@ -82,7 +82,7 @@ body{ /*corpo*/
     font-size: 20px;
     text-decoration:double;
     text-align: center;
-    border: 10px;
+    border: 20px;
     cursor:pointer; /*aparecer maozinha quando passar*/
     transition: all 0.3s ease-in-out;  
 }
